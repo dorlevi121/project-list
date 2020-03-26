@@ -1,0 +1,40 @@
+@import "../../../sass/variables.module.scss";
+
+.ProjectDetails {
+  width: 50vw;
+  @include position;
+  
+  & .Card {
+    & .Content {
+      & span {
+        @include header;
+      }
+      & p {
+        color: $color-primary;
+      }
+      & p::first-letter {
+        text-transform: uppercase;
+      }
+    }
+
+    & hr {
+  
+      border: 0;
+      height: 1px;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    }
+    & .Details {
+      & .Author {
+        background: $color-text-light;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: -2%;
+      }
+      & .Date {
+        background: $color-text-light;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+}

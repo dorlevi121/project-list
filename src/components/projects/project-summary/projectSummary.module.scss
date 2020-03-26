@@ -1,0 +1,38 @@
+@import "../../../sass/variables.module.scss";
+
+.Project {
+  direction: ltr;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 5%;
+  background-color: rgba($color: whitesmoke, $alpha: 0.9);
+  padding: 10px;
+  border-radius: 5px;
+
+  & .ProjectSummary {
+    & span {
+      text-transform: capitalize;
+      font-size: 1.5rem;
+      color: $color-primary;
+    }
+
+    & .Author {
+      & p {
+        color: $color-primary;
+      }
+    }
+    & .Date {
+      margin-top: -5%;
+
+      & p {
+        background: $color-text-light;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+
+  &:hover {
+    background-color: rgba($color: whitesmoke, $alpha: 1);
+  }
+}

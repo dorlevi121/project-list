@@ -1,0 +1,34 @@
+@import "../../sass/variables.module.scss";
+
+.Dashboard {
+  & .Row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+
+    & .Projects {
+      direction: rtl;
+      height: 85vh;
+      overflow-y: auto;
+      overflow-x: hidden;
+      margin-left: 5%;
+      &::-webkit-scrollbar {
+        width: 0.5em;
+        border-radius: 3px;
+        background-color: $color-text;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: $color-primary;
+        border-radius: 3px;
+
+        &:hover {
+          background: $color-primary-light;
+        }
+      }
+    }
+    & .Notifications {
+      margin-right: 5%;
+    }
+  }
+}

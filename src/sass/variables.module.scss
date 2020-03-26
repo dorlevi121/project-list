@@ -1,0 +1,21 @@
+//Colors
+$color-primary: #444;
+$color-primary-light: #555;
+
+$color-text: #FFFFF0;
+
+$color-text-light: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.44) 90%);
+
+$color-pink: #ec407a;
+
+@mixin header {
+    color: $color-primary;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 100;
+}
+
+@mixin position {
+    margin-left: 18%;
+    margin-top: 3%;
+}

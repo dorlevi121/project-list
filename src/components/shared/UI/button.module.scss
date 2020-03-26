@@ -1,0 +1,19 @@
+@import "../../../sass/variables.module.scss";
+
+.Button {
+  background-color: $color-pink;
+  border: none;
+  border-radius: 5px;
+  color: $color-primary;
+  padding: 13px 26px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .9rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: white;
+  }
+}

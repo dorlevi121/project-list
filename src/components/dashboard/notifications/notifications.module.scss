@@ -1,0 +1,27 @@
+.Notifications {
+  background-color: rgba($color: whitesmoke, $alpha: .9);
+  padding: 10px;
+  border-radius: 5px;
+  & .Title {
+    font-size: 1rem;
+  }
+  & .Content {
+    font-size: .8rem;
+    & ul {
+      list-style-type: none;
+      padding: 0;
+
+      & li {
+        text-align: left;
+
+        &:not(:first-child) {
+          margin-top: 10%;
+        }
+      }
+    }
+
+    & .Time {
+      margin-top: -6%;
+    }
+  }
+}

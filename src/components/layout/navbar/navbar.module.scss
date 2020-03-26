@@ -1,0 +1,63 @@
+@import "../../../sass/variables.module.scss";
+
+.Navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: $color-primary;
+
+  & .Logo {
+   
+    & img {
+      height: 40px;
+        }
+
+    & a {
+      text-decoration: none;
+      color: $color-text;
+    }
+  }
+
+  & .Links {
+    & ul {
+      list-style-type: none;
+
+      & li {
+        display: inline;
+        & a {
+          color: $color-text;
+          text-align: center;
+          padding: 14px 16px;
+          text-transform: capitalize;
+          text-decoration: none;
+          font-weight: 300;
+          transition: all .3s ease-in-out;
+        }
+
+        & .User {
+          display: inline;
+          border-radius: 50%;
+          background-color: $color-pink;
+          color: $color-text;
+          padding: 3px;
+          & span {
+            text-align: center;
+          }
+        }
+
+        & :hover {
+          background-color: $color-primary-light;
+          border-radius: 5px;
+        }
+
+        & :focus {
+          background-color: $color-primary-light;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
